@@ -1,0 +1,2 @@
+hi copy my contents to copyto.txt.
+but hey do it by a c program using system call. i know using cp command is easier but do it by program only.
