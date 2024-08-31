@@ -1,12 +1,20 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 15.c
+Author : Saurabh Dubey
+Description : 15. Write a program to display the environmental variable of the user (use environ).
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include<unistd.h>
-using namespace std;
+
 int main(){
 
     extern char **environ;
     
     for(int i =0; environ[i]; i++){
-        cout<<environ[i]<<endl;
+        printf("%s \n",environ[i]);
         
     }
 

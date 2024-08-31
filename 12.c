@@ -1,7 +1,14 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 12.c
+Author : Saurabh Dubey
+Description : 12. Write a program to find out the opening mode of a file. Use fcntl.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
-using namespace std;
 
 int main(){
     int fd1 = open("exp_on_filedescriptor.txt" , O_RDWR);
@@ -21,7 +28,7 @@ int main(){
         return -1;
     }
 
-    cout<<"file1 access mode: "<<(flag_fd1 & O_ACCMODE)<<endl;
+    printf("file1 access mode: %d \n",(flag_fd1 & O_ACCMODE));
 
     int flag_fd2 = fcntl(fd2, F_GETFL); //return status flags, which tells in which mode file is opened
     if(flag_fd2 == -1){
@@ -29,7 +36,7 @@ int main(){
         return -1;
     }
 
-    cout<<"file2 access mode: "<<(flag_fd2 & O_ACCMODE);
+    printf("file2 access mode: %d \n",(flag_fd2 & O_ACCMODE));
 
     return 0;
 }

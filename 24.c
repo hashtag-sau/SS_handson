@@ -1,3 +1,11 @@
+/*
+============================================================================
+Name : 24.c
+Author : Saurabh Dubey
+Description : 24. Write a program to create an orphan process.
+Date: 28th Aug, 2024.
+============================================================================
+*/
 #include<stdio.h>
 #include<unistd.h>
 

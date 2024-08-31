@@ -1,7 +1,13 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 6.c
+Author : Saurabh Dubey
+Description : Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include<unistd.h>
-
-using namespace std;
 
 int main(){
     

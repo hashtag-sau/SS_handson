@@ -1,8 +1,14 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 17a.c
+Author : Saurabh Dubey
+Description : 7. Write a program to copy file1 into file2 ($cp file1 file2).
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
-
-using namespace std;
 
 int main(){
     int copyfrom, copyto; // my filedescriptors
@@ -10,7 +16,7 @@ int main(){
 
     copyfrom = open("copyfrom.txt" , O_RDONLY);
     int numchar_read = 0;
-    numchar_read = read(copyfrom, buffer, 1024); // hope our file has than 1024 char. 
+    numchar_read = read(copyfrom, buffer, 1024); // hope our file has less than 1024 char. 
     if(numchar_read < 0) {
         perror("read error");
         return -1;
@@ -20,7 +26,7 @@ int main(){
     if(write(copyto, buffer, numchar_read) < 0) {
         perror("write error");
     }
-    cout<<"sucessfully copied";
+    printf("sucessfully copied");
     return 0;
 }
 

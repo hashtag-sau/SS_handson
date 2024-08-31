@@ -1,8 +1,14 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 3.c
+Author : Saurabh Dubey
+Description :Write a program to create a file and print the file descriptor value. Use creat ( ) system call
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include <fcntl.h>    
 #include <unistd.h> 
-
-using namespace std;
 
 int main(){
     const char *file_name = "exp_on_filedescriptor.txt";
@@ -11,10 +17,9 @@ int main(){
         perror("creat");
     }
 
-    cout<<"fd value: "<<fd; //cout was fd value: 3
+    printf("fd value: %d",fd); //print was fd value: 3
 
     while(1);
-
 
     return 0;
 

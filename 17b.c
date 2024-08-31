@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 17a.c
+Name : 17b.c
 Author : Saurabh Dubey
 Description : Write a program to simulate online ticket reservation. 
 Write a separate program, to open the file, implement write lock, read the ticket number, increment the number and print

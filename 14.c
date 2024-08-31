@@ -1,16 +1,24 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 14.c
+Author : Saurabh Dubey
+Description : 14 Write a program to find the type of a file.
+a. Input should be taken from command line.
+b. program should be able to identify any type of a file.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include<unistd.h>
 #include<sys/stat.h>
 #include<sys/types.h>
 
-using namespace std;
-
 int main(){
-    string file = "";
+    char file[100];
    struct stat file_status;
-    cout<<"enter the file\n";
-    cin>>file;
-    if(lstat(file.c_str(), &file_status) < 0){
+    printf("enter the file\n");
+    scanf("%s",file);
+    if(lstat(file, &file_status) < 0){
         perror("error getting file");
         return 0;
     }
@@ -26,3 +34,7 @@ int main(){
 
     return 0;
 }
+
+// enter the file
+// ../SS_handson
+// directory.

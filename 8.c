@@ -1,8 +1,16 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 17a.c
+Author : Saurabh Dubey
+Description : 8. Write a program to open a file in read only mode, read line by line and display each line as it is read.
+Close the file when end of file is reached.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+
+#include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
-
-using namespace std;
 
 int main(){
     int readme;

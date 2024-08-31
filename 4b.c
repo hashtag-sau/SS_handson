@@ -1,7 +1,15 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 4b.c
+Author : Saurabh Dubey
+Description : Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include<fcntl.h>
 #include<unistd.h>
-using namespace std;
+
 int main(){
     const char *filename = "exp_on_filedescriptor.txt";
     int fd, flags;

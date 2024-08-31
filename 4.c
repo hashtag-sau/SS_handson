@@ -1,7 +1,7 @@
-#include<bits/stdc++.h>
+#include<stdio.h>
 #include<fcntl.h>
 #include<unistd.h>
-using namespace std;
+
 int main(){
     const char *filename = "exp_on_filedescriptor.txt";
     int fd;
@@ -11,11 +11,11 @@ int main(){
     if(fd == -1) {
         perror("open error");
     }
-    else cout<<"file opened and fd = "<<fd;
+    else printf("file opened and fd = %d",fd);
 
 
 
-    flags = O_EXCL; // meaning of O_EXCL is "error if create and file exists" 
+    flags = O_EXCL; // meaning of O_EXCL is "error if create and file already exists" 
     fd = open(filename,flags);
     if(fd == -1){
         perror("open error with O_EXCL");

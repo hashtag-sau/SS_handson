@@ -1,8 +1,15 @@
-#include<bits/stdc++.h>
+/*
+============================================================================
+Name : 5.c
+Author : Saurabh Dubey
+Description : Write a program to create five new files with infinite loop. Execute the program in the background
+and check the file descriptor table at /proc/pid/fd.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+#include<stdio.h>
 #include <fcntl.h>    
 #include <unistd.h> 
-
-using namespace std;
 
 int main(){
     char file_name[] = "iwillbeshownon_fdtable_x.txt";
@@ -17,7 +24,7 @@ int main(){
             perror("creat");
         }
 
-        cout<<"fd value for file"<<i<<": "<<fd;
+        printf("fd value for file %d is: %d",i,fd);
 
     }
 

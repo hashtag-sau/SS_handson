@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 17a.c
+Name : 19.c
 Author : Saurabh Dubey
 Description : 19. Write a program to find out time taken to execute getpid system call. Use time stamp counter.
 ============================================================================
