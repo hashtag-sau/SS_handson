@@ -1,10 +1,12 @@
 /*
 ============================================================================
-Name : 17a.c
+Name : 18.c
 Author : Saurabh Dubey
-Description : Write a program to simulate online ticket reservation. Implement write lock
-Write a program to open a file, store a ticket number and exit.
-Date: 28th Aug, 2024.
+Description : 18. Write a program to perform Record locking.
+a. Implement write lock
+b. Implement read lock
+Create three records in a file. Whenever you access a particular record, first lock it then modify/access
+to avoid race condition
 ============================================================================
 */
 #include<stdio.h>
@@ -96,3 +98,16 @@ int main(){
 
 return 0;
 }
+
+// enter 1 to 3 which record? 1
+// acquiring read lock
+// acquired read lock
+// **Record no.1 **
+// *Name: hashtag-sau 
+// *Roll no 46 
+// released read lock
+// want to edit record? enter 0 or 1: 1
+// acquiring write lock
+// acquired write lock
+// enter name: hashtag-sau
+// enter roll: 46
